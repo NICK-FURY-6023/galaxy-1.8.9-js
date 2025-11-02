@@ -5,7 +5,7 @@ const { DISCORD_BOT_TOKEN } = process.env;
 
 const manager = new ShardingManager('./src/index.js', {
   token: DISCORD_BOT_TOKEN,
-  totalShards: 'auto', // Automatically determine the number of shards
+  totalShards: 'auto', // Automatically determine the number of shards 
 });
 
 manager.spawn();
